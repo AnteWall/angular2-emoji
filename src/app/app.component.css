@@ -1,0 +1,11 @@
+:host {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+.container {
+  max-width: 960px;
+  padding:20px;
+  width: 500px;
+  margin: auto;
+}

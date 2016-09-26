@@ -1,0 +1,10 @@
+$border-color: #eee;
+
+:host {
+  input {
+    border: 2px solid $border-color;
+    font-size: 10pt;
+    padding: 8px 10px;
+    width: 100%;
+  }
+}
