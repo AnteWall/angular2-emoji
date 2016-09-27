@@ -35,6 +35,7 @@ $border-radius: 12px;
     border-radius: 12px;
     box-shadow: 0 1px 5px $box-shadow-color;
     height: $popup-height;
+    line-height: 1.5;
     position: absolute;
     right: 0;
     top: 36px;
@@ -60,7 +61,7 @@ $border-radius: 12px;
 
     .emojis-container {
       border-radius: 0 0 12px 12px;
-      height: 157px;
+      height: 149px;
       overflow: auto;
     }
 

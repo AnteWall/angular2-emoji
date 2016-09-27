@@ -1,4 +1,4 @@
-<input type="text" [(ngModel)]="input" (ngModelChange)="onChange($event)" />
+<input type="text" (keyup.enter)="onEnter()" [(ngModel)]="input" (ngModelChange)="onChange($event)" />
 <div class="emoji-opener" (click)="togglePopup()">!</div>
 <div class="emoji-search" [ngClass]="popupAnchor" *ngIf="popupOpen">
   <div class="search-header">

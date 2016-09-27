@@ -1,4 +1,4 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 import { EmojiUtil } from '../util/util';
 
@@ -8,7 +8,11 @@ import { EmojiUtil } from '../util/util';
   styleUrls: ['input.scss']
 })
 export class EmojiInputComponent implements OnInit {
+
   @Input() popupAnchor = 'top';
+  @Input() onEnter: Function = () => {};
+  @Input() model: any;
+  @Output() modelChange: any = new EventEmitter();
 
   input: string;
   filterEmojis: string;
@@ -48,5 +52,7 @@ export class EmojiInputComponent implements OnInit {
 
   onChange(newValue) {
     this.input = this.emojiUtil.emojify(newValue);
+    this.model = this.input;
+    this.modelChange.emit(this.input);
   }
 }

@@ -3,9 +3,15 @@
     max-width: 960px;
     margin: auto;
 }
-.container {
-  max-width: 960px;
-  padding:20px;
-  width: 500px;
-  margin: auto;
+
+header {
+
+}
+
+code {
+  display: block;
+  white-space: pre-wrap;
+  padding: 15px;
+  background: #f2f2f2;
+  border: 1px solid #e6e6e6;
 }

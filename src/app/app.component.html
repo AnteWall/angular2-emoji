@@ -1,6 +1,21 @@
-<h1>
-  {{title}}
-</h1>
 <div class="container">
-  <emoji-input></emoji-input>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>emoji-input</h2>
+      <h3>Examples</h3>
+      <code> {{'<'}}emoji-input{{'>'}}{{'<'}}/emoji-input{{'>'}}</code>
+      <br>
+      <emoji-input [(model)]="testModel"></emoji-input>
+      {{testModel}}
+      <br><br>
+      <code> {{'<'}}emoji-input [popupAnchor]="'bottom'"{{'>'}}{{'<'}}/emoji-input{{'>'}}</code>
+      <p>You can specify anchor point of the emoji selector</p>
+      <pre>popupAnchor - 'top | bottom'</pre>
+      <emoji-input [popupAnchor]="'bottom'"></emoji-input>
+      <br><br>
+      <code> {{'<'}}emoji-input [onEnter]="onEnterFunction"{{'>'}}{{'<'}}/emoji-input{{'>'}}</code>
+      <p>Specify function to be called when pressing enter key</p>
+      <emoji-input [onEnter]="enterTest"></emoji-input>
+    </div>
+  </div>
 </div>

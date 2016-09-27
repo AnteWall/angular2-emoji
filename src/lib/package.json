@@ -1,12 +1,12 @@
 {
-  "name": "angular-emoji",
-  "version": "0.1.0",
-  "description": "Angular 2 Emoji Picker",
-  "module": "./index.js",
+  "name": "angular2-emoji",
+  "version": "0.1.1",
+  "description": "Angular 2 Emoji",
+  "module": "./index.ts",
   "typings": "./index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AnteWall/angular2-emoji-picker.git"
+    "url": "https://github.com/AnteWall/angular2-emoji.git"
   },
   "keywords": [
     "angular",
@@ -15,9 +15,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AnteWall/angular2-emoji-picker/issues"
+    "url": "https://github.com/AnteWall/angular2-emoji/issues"
   },
-  "homepage": "https://github.com/AnteWall/angular2-emoji-picker#readme",
+  "homepage": "https://github.com/AnteWall/angular2-emoji#readme",
   "peerDependencies": {
     "@angular/core": "^2.0.0",
     "@angular/common": "^2.0.0",
