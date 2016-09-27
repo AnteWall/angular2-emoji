@@ -10,8 +10,10 @@ import { EmojiUtil } from '../util/util';
 export class EmojiInputComponent implements OnInit {
   input: any;
   emojiUtil: EmojiUtil = new EmojiUtil();
+  allEmojis: Array<any>;
 
   ngOnInit() {
+    this.allEmojis = this.emojiUtil.getAll();
   }
 
   onChange(newValue) {

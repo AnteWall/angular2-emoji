@@ -18,6 +18,9 @@ export class EmojiUtil {
     return emoji;
   }
 
+  public getAll() {
+    return emojis;
+  }
 
   public emojify(str) {
     return str.split(PARSE_REGEX).map((emoji, index) => {

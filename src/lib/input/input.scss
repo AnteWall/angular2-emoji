@@ -1,10 +1,20 @@
 $border-color: #eee;
 
 :host {
+  position: relative;
+
   input {
     border: 2px solid $border-color;
     font-size: 10pt;
     padding: 8px 10px;
     width: 100%;
+  }
+
+  .emoji-opener {
+    cursor: pointer;
+    line-height: 18px;
+    position: absolute;
+    right: 12px;
+    top: 0;
   }
 }

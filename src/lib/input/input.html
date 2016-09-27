@@ -1,1 +1,7 @@
 <input type="text" [(ngModel)]="input" (ngModelChange)="onChange($event)" />
+<div class="emoji-opener">!</div>
+<div class="emoji-search">
+  <span *ngFor="let emoji of allEmojis">
+    {{emoji.emoji}}
+  </span>
+</div>
