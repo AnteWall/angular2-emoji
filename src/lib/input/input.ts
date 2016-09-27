@@ -1,4 +1,4 @@
-import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import {Component, OnInit, OnChanges, Input, Output, EventEmitter} from '@angular/core';
 
 import { EmojiUtil } from '../util/util';
 
@@ -7,7 +7,7 @@ import { EmojiUtil } from '../util/util';
   templateUrl: 'input.html',
   styleUrls: ['input.scss']
 })
-export class EmojiInputComponent implements OnInit {
+export class EmojiInputComponent implements OnInit, OnChanges {
 
   @Input() popupAnchor = 'top';
   @Input() onEnter: Function = () => {};
@@ -24,6 +24,12 @@ export class EmojiInputComponent implements OnInit {
     this.input = '';
     this.filterEmojis = '';
     this.allEmojis = this.emojiUtil.getAll();
+  }
+
+  ngOnChanges() {
+    if (this.model !== this.input) {
+      this.input = this.model;
+    }
   }
 
   togglePopup() {

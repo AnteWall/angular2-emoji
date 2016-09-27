@@ -15,7 +15,7 @@
       <br><br>
       <code> {{'<'}}emoji-input [onEnter]="onEnterFunction"{{'>'}}{{'<'}}/emoji-input{{'>'}}</code>
       <p>Specify function to be called when pressing enter key</p>
-      <emoji-input [onEnter]="enterTest"></emoji-input>
+      <emoji-input [onEnter]="enterTest.bind(this)"></emoji-input>
     </div>
   </div>
 </div>

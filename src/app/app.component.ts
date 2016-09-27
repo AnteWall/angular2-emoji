@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  testModel: string;
   enterTest() {
     console.log('test');
+    this.testModel = '';
   }
 }
