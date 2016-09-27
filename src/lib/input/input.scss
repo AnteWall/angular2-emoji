@@ -1,10 +1,18 @@
-$border-color: #eee;
+$border-color: #ccc;
+$search-bg: #fff;
+$search-hover-bg: #ccc;
+$search-header-bg: #eee;
+$box-shadow-color: rgba(0, 0, 0, .15);
+
+$border-radius: 12px;
 
 :host {
+  display: block;
   position: relative;
 
   input {
-    border: 2px solid $border-color;
+    border: 1px solid $border-color;
+    box-sizing: border-box;
     font-size: 10pt;
     padding: 8px 10px;
     width: 100%;
@@ -12,9 +20,49 @@ $border-color: #eee;
 
   .emoji-opener {
     cursor: pointer;
-    line-height: 18px;
+    line-height: 36px;
     position: absolute;
     right: 12px;
     top: 0;
+  }
+
+  .emoji-search {
+    background-color: $search-bg;
+    border: 1px solid $border-color;
+    border-radius: 12px;
+    box-shadow: 0 1px 5px $box-shadow-color;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 36px;
+    width: 192px;
+
+    input {
+      border-radius: 12px;
+      font-size: 10px;
+      padding: 4px 8px;
+    }
+
+    .search-header {
+      background-color: $search-header-bg;
+      border-bottom: 1px solid $border-color;
+      border-radius: $border-radius $border-radius 0 0;
+      padding: 10px;
+    }
+
+    .emojis-container {
+      border-radius: 0 0 12px 12px;
+      height: 157px;
+      overflow: auto;
+    }
+
+    span {
+      cursor: pointer;
+      padding: 4px 3px 2px 4px;
+
+      &:hover {
+        background-color: $search-hover-bg;
+      }
+    }
   }
 }
