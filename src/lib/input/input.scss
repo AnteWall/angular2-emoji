@@ -4,6 +4,9 @@ $search-hover-bg: #ccc;
 $search-header-bg: #eee;
 $box-shadow-color: rgba(0, 0, 0, .15);
 
+$popup-z-index: 100;
+
+$popup-height: 200px;
 $border-radius: 12px;
 
 :host {
@@ -31,11 +34,16 @@ $border-radius: 12px;
     border: 1px solid $border-color;
     border-radius: 12px;
     box-shadow: 0 1px 5px $box-shadow-color;
-    height: 200px;
+    height: $popup-height;
     position: absolute;
     right: 0;
     top: 36px;
     width: 192px;
+    z-index: $popup-z-index;
+
+    &.bottom {
+      top: -$popup-height - 2px;
+    }
 
     input {
       border-radius: 12px;
