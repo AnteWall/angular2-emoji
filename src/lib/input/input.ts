@@ -52,7 +52,8 @@ export class EmojiInputComponent implements OnInit, OnChanges {
   }
 
   onEmojiClick(e) {
-    this.input += e;
+    this.input = this.input + e;
+    this.modelChange.emit(this.input);
     this.popupOpen = false;
   }
 
