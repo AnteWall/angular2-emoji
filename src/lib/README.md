@@ -34,8 +34,9 @@ Where to anchor the emoji popup
   [onEnter]="onEnterFunction"
   [popupAnchor]="'bottom'"
   [(model)]="bindedVariable">
-</emoji-input>```
+</emoji-input>
 
+```
 
 ## Development
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
