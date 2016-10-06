@@ -22,11 +22,15 @@ $border-radius: 12px;
   }
 
   .emoji-opener {
+    background-image: url('../assets/select.png');
+    background-size: contain;
     cursor: pointer;
+    height: 24px;
     line-height: 36px;
     position: absolute;
     right: 12px;
-    top: 0;
+    top: 6px;
+    width: 24px;
   }
 
   .emoji-search {

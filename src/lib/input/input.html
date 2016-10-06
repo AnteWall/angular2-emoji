@@ -1,5 +1,5 @@
 <input type="text" (keyup.enter)="onEnter()" [(ngModel)]="input" (ngModelChange)="onChange($event)" />
-<div class="emoji-opener" (click)="togglePopup()">!</div>
+<div class="emoji-opener" (click)="togglePopup()"></div>
 <div class="emoji-search" [ngClass]="popupAnchor" [hidden]="!popupOpen">
   <div class="search-header">
     <input type="search" [(ngModel)]="filterEmojis" placeholder="Search..." />
