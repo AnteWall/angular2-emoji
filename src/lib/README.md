@@ -1,4 +1,13 @@
 # Angular2 Emoji
+[![npm version](https://badge.fury.io/js/angular2-emoji.svg)](https://badge.fury.io/js/angular2-emoji)
+## Live demo
+[Live demo](https://antewall.github.io/angular2-emoji/)
+
+angular2-emoji is currently in early version and is stilled being developed. If you want to try it out check out the `Usage` guide below.
+
+#### TODO
+- Expose EmojiService api
+- Test(s)
 
 ## Usage
 Install through npm
@@ -35,7 +44,6 @@ Where to anchor the emoji popup
   [popupAnchor]="'bottom'"
   [(model)]="bindedVariable">
 </emoji-input>
-
 ```
 
 ## Development
@@ -74,6 +82,7 @@ pull request with failing specs.
 7. Add, commit, and push your changes.
 8. [Submit a pull request.][pr]
 
+[issues]: https://github.com/AnteWall/angular2-emoji/issues
 [fork]: http://help.github.com/fork-a-repo/
 [branch]: http://learn.github.com/p/branching.html
 [pr]: http://help.github.com/send-pull-requests/

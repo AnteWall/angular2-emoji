@@ -3,7 +3,7 @@
     <div class="col-xs-12">
       <h2>emoji-input</h2>
       <h3>Examples</h3>
-      <code> {{'<'}}emoji-input{{'>'}}{{'<'}}/emoji-input{{'>'}}</code>
+      <code> {{'<'}}emoji-input [(model)]="testVar"{{'>'}}{{'<'}}/emoji-input{{'>'}}</code>
       <br>
       <emoji-input [(model)]="testModel"></emoji-input>
       {{testModel}}
@@ -15,9 +15,11 @@
       <br><br>
       <code> {{'<'}}emoji-input [onEnter]="onEnterFunction"{{'>'}}{{'<'}}/emoji-input{{'>'}}</code>
       <p>Specify function to be called when pressing enter key</p>
+      <p>Enter pressed: {{pressedCount}} time(s)
       <emoji-input [onEnter]="enterTest.bind(this)"></emoji-input>
       <br><br>
       <h2>EmojiService</h2>
+      <br>
       <code>EmojiSerice</code>
       <p>EmojiService service provider</p>
       <code>new EmojiService().emojify(str)</code>
