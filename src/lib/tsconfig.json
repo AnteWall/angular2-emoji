@@ -9,8 +9,5 @@
     "removeComments": false,
     "noImplicitAny": false,
     "outDir": "dist/"
-  },
-  "include": [
-    "src/*"
-  ]
+  }
 }
