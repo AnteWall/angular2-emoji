@@ -4,9 +4,11 @@
 [Live demo](https://antewall.github.io/angular2-emoji/)
 
 angular2-emoji is currently in early version and is stilled being developed. If you want to try it out check out the `Usage` guide below.
+Using the [EmojiOne](https://github.com/Ranks/emojione) JSON file.
 
 #### TODO
 - Expose EmojiService api
+- Emoji pipe
 - Test(s)
 
 ## Usage
@@ -86,3 +88,4 @@ pull request with failing specs.
 [fork]: http://help.github.com/fork-a-repo/
 [branch]: http://learn.github.com/p/branching.html
 [pr]: http://help.github.com/send-pull-requests/
+
