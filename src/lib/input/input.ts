@@ -4,8 +4,8 @@ import { EmojiUtil } from '../util/util';
 
 @Component({
   selector: 'emoji-input',
-  templateUrl: 'input.html',
-  styleUrls: ['input.scss']
+  templateUrl: './input.html',
+  styleUrls: ['./input.scss']
 })
 export class EmojiInputComponent implements OnInit, OnChanges {
 
