@@ -17,13 +17,15 @@ export class EmojiInputComponent implements OnInit, OnChanges {
   input: string;
   filterEmojis: string;
   emojiUtil: EmojiUtil = new EmojiUtil();
-  allEmojis: Array<any>;
-  popupOpen: boolean = false;
+  emojiCategories: Array<any> = [];
+  selectedCategory: string;
+  popupOpen: boolean = true;
 
   ngOnInit() {
     this.input = '';
     this.filterEmojis = '';
-    this.allEmojis = this.emojiUtil.getAll();
+    this.emojiCategories = this.emojiUtil.getCategories();
+    this.selectedCategory = this.emojiCategories[0];
   }
 
   ngOnChanges() {
@@ -36,19 +38,12 @@ export class EmojiInputComponent implements OnInit, OnChanges {
     this.popupOpen = !this.popupOpen;
   }
 
+  getEmoji(e) {
+    return this.emojiUtil.get(e);
+  }
+
   getFilteredEmojis() {
-    return this.allEmojis.filter((e) => {
-      if (this.filterEmojis === '') {
-        return true;
-      } else {
-        for (let alias of e.aliases) {
-          if (alias.includes(this.filterEmojis)) {
-            return true;
-          }
-        }
-      }
-      return false;
-    });
+    return this.emojiUtil.getByCategory(this.selectedCategory);
   }
 
   onEmojiClick(e) {
